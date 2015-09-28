@@ -1,0 +1,22 @@
+.sign-in-page {
+	font-size: 0.9rem;
+
+	h1 {
+		margin: 0 0 8px;
+	}
+
+	p {
+		margin: 0 0 12px;
+	}
+
+	.button-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.btn {
+			width: 140px;
+			font-size: 0.9rem;
+		}
+	}
+}

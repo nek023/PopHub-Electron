@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 18px 10px 0;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+	color: $text-color;
+	background-color: transparent;
+
+	overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1 {
+	font-size: 1.3rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+}
+
+h3 {
+	font-size: 1.1rem;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: $link-color;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.text-primary {
+	color: $primary-color;
+}
+
+.text-danger {
+	color: $danger-color;
+}
+
+.text-warning {
+	color: $warning-color;
+}
+
+.text-success {
+	color: $success-color;
+}
+
+.text-info {
+	color: $info-color;
+}
+
+.text-muted {
+	color: $muted-color;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}

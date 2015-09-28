@@ -1,0 +1,81 @@
+.notifications-page {
+	height: 380px;
+	overflow: scroll;
+	font-size: 0.8rem;
+	
+	.notification-section {
+		.notification-section-title {
+			padding: 0 12px 0 8px;
+			overflow: hidden;
+			vertical-align: middle;
+			background-color: rgb(238, 238, 238);
+			border-top: 1px solid $notification-border-color;
+			border-bottom: 1px solid $notification-border-color;
+
+			.checkmark {
+				margin: auto 0;
+				font-size: 20px;
+			}
+		}
+
+		.notifications {
+			.notification {
+				padding: 4px 6px;
+				border-bottom: 1px solid $notification-border-color;
+
+				.notification-icon {
+					min-width: 21px;
+					padding: 2px 6px 0 0;
+					display: table-cell;
+					color: $notification-icon-color;
+				}
+
+				.notification-body {
+					display: table-cell;
+
+					.notification-title {
+						margin: 0;
+						padding: 0;
+					}
+
+					.notification-date {
+						font-size: 0.75rem;
+						color: $notification-date-color;
+					}
+				}
+
+				&:hover {
+					background-color: rgb(248, 248, 248);
+					cursor: pointer;
+				}
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+
+		a:active, a:hover, a:link, a:visited {
+			color: $text-color;
+		}
+
+		&:first-child {
+			.notification-section-title {
+				border-top: none;
+			}
+		}
+	}
+
+	.no-notifications {
+		padding-top: 140px;
+		text-align: center;
+
+		.mega-octicon {
+			color: #aaaaaa;
+		}
+
+		h2 {
+			margin-top: 8px;
+		}
+	}
+}

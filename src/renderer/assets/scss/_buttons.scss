@@ -1,0 +1,85 @@
+.btn {
+  display: inline-block;
+  padding: 4px;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  &, &:active, &.active {
+    &:focus {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
+  &:active, &.active {
+    background-image: none;
+    outline: 0;
+  }
+
+  &.disabled, &:disabled {
+    cursor: not-allowed;
+    opacity: .65;
+  }
+}
+
+a.btn.disabled {
+  pointer-events: none;
+}
+
+.btn-primary-outline {
+	color: $primary-color;
+	background-color: transparent;
+  background-image: none;
+	border-color: $primary-color;
+
+	&:hover, &:focus, &:active, &.active {
+		color: #fff;
+		background-color: $primary-color;
+		border-color: $primary-color;
+	}
+
+  &:disabled, &.disabled {
+    &:hover, &:focus {
+  		border-color: $primary-color;
+    }
+  }
+}
+
+.btn-danger-outline {
+	color: $danger-color;
+	background-color: transparent;
+  background-image: none;
+	border-color: $danger-color;
+
+	&:hover, &:focus, &:active, &.active {
+		color: #fff;
+		background-color: $danger-color;
+		border-color: $danger-color;
+	}
+
+  &:disabled, &.disabled {
+    &:hover, &:focus {
+  		border-color: $danger-color;
+    }
+  }
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  padding: 2px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  border-radius: 4px;
+}

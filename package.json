@@ -1,0 +1,55 @@
+{
+  "name": "PopHub",
+  "version": "0.0.1",
+  "description": "GitHub activity & notification viewer.",
+  "main": "build/main/index.js",
+  "scripts": {
+    "archive": "npm run build && bash scripts/archive.sh",
+    "build": "npm run clean && gulp build",
+    "codesign": "bash scripts/codesign.sh",
+    "clean": "gulp clean",
+    "package": "npm run build && bash scripts/package.sh",
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pophub",
+    "github",
+    "activities",
+    "notification",
+    "mac",
+    "app"
+  ],
+  "author": "Katsuma Tanaka <questbeat@gmail.com> (https://github.com/questbeat)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/questbeat/PopHub.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-runtime": "^5.8.24",
+    "file-url": "^1.0.1",
+    "isomorphic-fetch": "^2.1.1",
+    "menubar": "https://github.com/questbeat/menubar.git",
+    "moment": "^2.10.6",
+    "react": "^0.13.3",
+    "react-redux": "^2.1.2",
+    "redux": "^3.0.0",
+    "redux-logger": "^1.0.8",
+    "redux-thunk": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.3",
+    "browser-sync": "^2.9.3",
+    "del": "^2.0.2",
+    "electron-packager": "^5.1.0",
+    "electron-prebuilt": "^0.32.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-babel": "^5.2.1",
+    "gulp-eslint": "^1.0.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-ruby-sass": "^2.0.3",
+    "run-sequence": "^1.1.3"
+  }
+}

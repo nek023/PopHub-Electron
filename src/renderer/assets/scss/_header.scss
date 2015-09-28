@@ -1,0 +1,16 @@
+.header {
+	border-bottom: 1px solid $balloon-border-color;
+
+	.header-button-container {
+		padding-bottom: 10px;
+		display: flex;
+
+		.btn {
+			width: 100%;
+		}
+
+		.btn-sm {
+			padding: 0.11rem 0.75rem;
+		}
+	}
+}

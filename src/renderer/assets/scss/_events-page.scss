@@ -1,0 +1,53 @@
+.events-page {
+	height: 380px;
+	overflow: scroll;
+	font-size: 0.8rem;
+	
+	a:active, a:hover, a:link, a:visited {
+		color: $link-color;
+	}
+
+	.event {
+		padding: 4px 6px;
+		border-bottom: 1px solid $event-border-color;
+
+		.event-icon {
+			min-width: 21px;
+			padding: 2px 6px 0 0;
+			display: table-cell;
+			color: $event-icon-color;
+		}
+
+		.event-body {
+			display: table-cell;
+
+			.event-title {
+				margin: 0;
+				padding: 0;
+				word-break: break-all;
+			}
+
+			.event-date {
+				font-size: 0.75rem;
+				color: $event-date-color;
+			}
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	.no-events {
+		padding-top: 140px;
+		text-align: center;
+
+		.mega-octicon {
+			color: #aaaaaa;
+		}
+
+		h2 {
+			margin-top: 8px;
+		}
+	}
+}

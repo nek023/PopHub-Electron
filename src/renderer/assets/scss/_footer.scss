@@ -1,0 +1,23 @@
+.footer {
+	padding: 8px 0 0;
+	overflow: scroll;
+	border-top: 1px solid $balloon-border-color;
+	font-size: 0.8rem;
+
+	.settings-icon-container {
+		a:active, a:hover, a:link, a:visited {
+			color: $text-color;
+		}
+	}
+
+	.settings-icon-gear {
+		padding-right: 2px;
+		font-size: 22px;
+		vertical-align: middle;
+	}
+
+	.settings-icon-arrow {
+		font-size: 12px;
+		vertical-align: middle;
+	}
+}
