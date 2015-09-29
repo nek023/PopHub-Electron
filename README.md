@@ -20,7 +20,7 @@ You can download pre-built packages from [releases](https://github.com/questbeat
 ### Build from source
 
     $ npm install
-    $ npm run dist
+    $ npm run package
 
 
 ## Customization
