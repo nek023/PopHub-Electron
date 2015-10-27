@@ -30,7 +30,7 @@
     "babel-runtime": "^5.8.24",
     "file-url": "^1.0.1",
     "isomorphic-fetch": "^2.1.1",
-    "menubar": "https://github.com/questbeat/menubar.git",
+    "menubar": "git+https://github.com/questbeat/menubar.git",
     "moment": "^2.10.6",
     "react": "^0.13.3",
     "react-redux": "^2.1.2",
