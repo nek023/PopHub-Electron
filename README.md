@@ -5,6 +5,15 @@ GitHub activity & notification viewer.
 ![](screenshot.png)
 
 
+## Note
+
+This repository is only for my Election practice and demonstration.  
+It's not actively maintained.
+
+You can download the actual app written in Swift from the Mac App Store.
+https://itunes.apple.com/jp/app/pophub/id928494006?mt=12
+
+
 ## Requirements
 
 Mac OS X 10.8 or later.
